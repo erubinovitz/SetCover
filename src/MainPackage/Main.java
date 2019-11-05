@@ -23,6 +23,7 @@ class dataNode{
     }
 }
 public class Main {
+    private static String filePath = ""; //ADD YOUR FILE PATH FOR SET HERE
     private static final int[] test = new int[]{1,2,3,4,5,6};
     private static boolean[] found;
     private static int numFound=0;
@@ -35,7 +36,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("C:\\Users\\erubi\\IdeaProjects\\SetCoverProblem\\Test(rg6325).txt");
+        File file = new File(filePath+"Test(rg6325).txt");
       //  System.out.println(file.getName());
         Scanner sc = new Scanner(file);
       //  System.out.println(sc.nextLine());
