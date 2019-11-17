@@ -1,6 +1,11 @@
 # SetCover
 Use backtracking to efficiently find the minimum set cover.
 
+**What is the minimum set cover?**
+
+Say we have a range of numbers, 1 to N, as our universe, and we have some number of sets that contain some number of items from that range. For example, our range could be 1 to 6, and our subsets could be {1,2,3}, {2,4}, {5}, {3,6},{4,5,6}. Our goal is to use the minimum number of these sets to hold every item in our universe. In this example, the minimum set cover would be {1,2,3} and {4,5,6}, as it only uses 2 sets, and has 1, 2, 3, 4, 5 and 6. The minimum set cover problem is NP Hard, meaning that no "efficient" solution can be found- however, we can still use pruning to make backtracking more efficient than a straight N! for input.
+
+
 Input file is as follows:
 
 -Number of total items, n, in the universal set
